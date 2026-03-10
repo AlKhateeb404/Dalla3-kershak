@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add new recipe</title>
+</head> 
+<body>
+<h1>Add New Recipe</h1>
+<nav> 
+    <a href="Home.html">Home Page</a>
+    <a href="fav page.html">Favourites Page</a>
+</nav>
+<!-- inputs   -->
+    <div>    
+        <form action="submit.html" method="get">
+            <div>
+            <h2>Recipe ID</h2>
+            <label for="recipeID">Recipe ID</label>
+            <input type="number" required id="recipeID">
+            </div>
+            <div>
+                <h2>Recipe Name</h2>
+                <label for="recipeName">Recipe Name</label>
+                <input type="text" id="recipeName" required> 
+            </div>
+            <!-- course name choices -->
+            <div>
+                 <h2>Choose Course Name</h2>
+                 <div>
+                    <input type="radio" id="apetizer" name="course" value="Appetizers" required>
+                    <label for="apetizer">Appetizers</label> 
+                </div>
+                <div>
+                    <input type="radio" id="main" name="course" value="Main Course" required>
+                    <label for="main">Main Course</label>
+                </div>
+                <div>
+                    <input type="radio" id="dessert" name="course" value="Dessert" required>
+                    <label for="dessert">Dessert</label>
+                </div>
+            </div>
+            <!-- adding ingredients with static number till we add js so it becomes unlimited -->
+             <!-- to be edited -->
+            <div>
+            <h2>Add Ingredients</h2>
+
+            <div>
+                <h3>ingredient 1</h3 >
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="ID" required>
+                <input type="number" placeholder="quantity" min="1" required>
+            </div>
+            <div>
+                <h3>ingredient 2</h3>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="ID">
+                <input type="number" placeholder="quantity" min="1">
+            </div>
+            <div>
+                <h3>ingredient 3</h3>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="ID">
+                <input type="number" placeholder="quantity" min="1">
+            </div>
+            <div>
+                <h3>ingredient 4</h3>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="ID">
+                <input type="number" placeholder="quantity" min="1">
+            </div>
+            <div>
+                <h3>ingredient 5</h3>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="ID">
+                <input type="number" placeholder="quantity" min="1">
+            </div>
+           </div>
+            <input type="submit">
+        </form>
+        
+    </div>
+
+</body>
+
+</html>
