@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up</title>
+</head>
+<body>
+
+  <h1>Sign Up</h1>
+  <p>Create a new account to get started.</p>
+
+  <form action="login.html" method="get">
+
+    
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required minlength="3" maxlength="30"><br><br>
+
+   
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+   
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"><br><br>
+
+    
+    <label for="confirm_password">Confirm Password:</label><br>
+    <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter your password" required><br><br>
+
+   
+    <label>Account Type:</label><br>
+    <input type="radio" id="role_user" name="is_admin" value="0" checked>
+    <label for="role_user">User</label>
+    <input type="radio" id="role_admin" name="is_admin" value="1">
+    <label for="role_admin">Admin</label><br><br>
+
+   
+    <input type="submit" value="Sign Up">
+
+  </form>
+
+  <br>
+  <p>Already have an account? <a href="login.html">Login here</a></p>
+
+</body>
+</html>
