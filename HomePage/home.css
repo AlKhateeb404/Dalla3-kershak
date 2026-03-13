@@ -88,6 +88,38 @@
   border-radius: 12px;
   font-size: 1rem;
  }
+
+ .search{
+    display: flex;            
+    align-items: center;
+    width: 100%;             
+    max-width: 500px;        
+    margin: 20px auto;        
+    border: 2px solid #ccc;   
+    border-radius: 25px;      
+    overflow: hidden;  
+ }
+
+ .searchInput{
+    flex: 1;                 
+    border: none;             
+    padding: 10px 20px;
+    font-size: 1rem;
+    outline: none;           
+ }
+
+ .searchBtn{
+    padding: 10px 20px;
+    background-color: #b8860b;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+ }
+
+
+
+
 .navitems{
   display: flex;
   list-style: none;
