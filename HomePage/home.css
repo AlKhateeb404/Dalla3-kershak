@@ -205,6 +205,8 @@
     border-radius: 25px;
     font-size: 0.95rem;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
   }
 
   .view-btn:hover {
