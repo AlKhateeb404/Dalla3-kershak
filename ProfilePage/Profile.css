@@ -1,0 +1,71 @@
+.profile-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    gap: 50px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Sidebar Styling */
+.profile-sidebar {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    padding-right: 50px;
+}
+
+.avatar-wrapper img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #eee;
+    margin-bottom: 10px;
+}
+
+/* Content Styling */
+.profile-content {
+    flex: 2;
+}
+
+.settings-group {
+    margin-bottom: 25px;
+}
+
+.input-mock {
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin: 8px 0;
+    color: #666;
+}
+
+/* Button Styling */
+.btn-small {
+    display: block;
+    margin: 0 auto 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.btn-fav {
+    display: inline-block;
+    background: #b8860b;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.btn-edit {
+    background: none;
+    border: 1px solid #c8553d;
+    color: #c8553d;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
