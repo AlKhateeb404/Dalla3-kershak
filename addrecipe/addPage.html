@@ -1,5 +1,6 @@
 <html>
 <head>
+    <link rel="stylesheet" href="addpage.css">
     <meta charset="UTF-8">
     <title>Add new recipe</title>
 </head> 
@@ -7,8 +8,8 @@
   <nav style="background-color: #271c00; padding: 10px;">
     <table width="100%" border="0">
         <tr>
-            <td align="center"><a href="HomePage/Home.html" style="color: white; text-decoration: none; font-family: sans-serif;">Home</a></td>
-            <td align="center"><a href="RecipesList/ListOfRecipes.html" style="color: white; text-decoration: none; font-family: sans-serif;">Recipes</a></td>
+            <td align="center"><a href="../HomePage/Home.html" style="color: white; text-decoration: none; font-family: sans-serif;">Home</a></td>
+            <td align="center"><a href="../RecipesList/ListOfRecipes.html" style="color: white; text-decoration: none; font-family: sans-serif;">Recipes</a></td>
             <td align="center"><a href="addPage.html" style="color: white; text-decoration: none; font-family: sans-serif;">Add Recipe</a></td>
             <td align="center"><a href="editRecipe.html" style="color: white; text-decoration: none; font-family: sans-serif;">Edit Recipe</a></td>
             <td align="center"><a href="fav page.html" style="color: white; text-decoration: none; font-family: sans-serif;">Favourites</a></td>
@@ -20,74 +21,63 @@
         </tr>
     </table>
 </nav>
-<h1>Add New Recipe</h1>
 
 <!-- inputs   -->
-    <div>    
-        <form action="submit.html" method="get">
-            <div>
+    <div class="content">    
+        <h1>Add New Egyptian Masterpiece</h1>
+
+        <form action="submit.html" method="get" class="form-card">
+            
+           <div class="idnamesec">
+             <div class="idname">
             <h2>Recipe ID</h2>
-            <label for="recipeID">Recipe ID</label>
-            <input type="number" required id="recipeID" >
+            <input type="text" required id="recipeID" >
             </div>
-            <div>
+            <div class="idname">
                 <h2>Recipe Name</h2>
-                <label for="recipeName">Recipe Name</label>
                 <input type="text" id="recipeName" required > 
             </div>
+           </div>
             <!-- course name choices -->
-            <div>
-                 <h2>Choose Course Name</h2>
-                 <div>
-                    <input type="radio" id="apetizer" name="course" value="Appetizers" required>
-                    <label for="apetizer">Appetizers</label> 
+            
+            <div class="form-section">
+                <h2>Choose Course Name</h2>
+                 <div class="form-sectionRadio">
+                    <div>
+                        <input class="radio-input" type="radio" id="apetizer" name="course" value="Appetizers" required>
+                        <label class="radio-label" for="apetizer">Appetizers</label> 
+                    </div>
+                    <div>
+                        <input class="radio-input" type="radio" id="main" name="course" value="Main Course" required>
+                        <label class="radio-label" for="main">Main Course</label>
+                    </div>
+                    <div>
+                        <input class="radio-input" type="radio" id="dessert" name="course" value="Dessert" required>
+                        <label class="radio-label" for="dessert">Dessert</label>
+                    </div>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="main" name="course" value="Main Course" required>
-                    <label for="main">Main Course</label>
-                </div>
-                <div>
-                    <input type="radio" id="dessert" name="course" value="Dessert" required>
-                    <label for="dessert">Dessert</label>
-                </div>
-            </div>
             <!-- adding ingredients with static number till we add js so it becomes unlimited -->
              <!-- to be edited -->
-            <div>
-            <h2>Add Ingredients</h2>
+            <div class="ingredientSec">
 
-            <div>
-                <h3>ingredient 1</h3 >
+            <h2> Ingredients</h2>
+
+            <div class="ingredient">
+                <!-- <h3>ingredient 1</h3 > -->
                 <input type="text" placeholder="Name" required>
                 <input type="text" placeholder="ID" required>
-                <input type="number" placeholder="quantity" min="1" required>
+                <input type="text" placeholder="quantity"  required>
             </div>
-            <div>
-                <h3>ingredient 2</h3>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="ID">
-                <input type="number" placeholder="quantity" min="1">
+             <div class="ingredient">
+                <!-- <h3>ingredient 1</h3 > -->
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="ID" required>
+                <input type="text" placeholder="quantity"  required>
             </div>
-            <div>
-                <h3>ingredient 3</h3>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="ID">
-                <input type="number" placeholder="quantity" min="1">
-            </div>
-            <div>
-                <h3>ingredient 4</h3>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="ID">
-                <input type="number" placeholder="quantity" min="1">
-            </div>
-            <div>
-                <h3>ingredient 5</h3>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="ID">
-                <input type="number" placeholder="quantity" min="1">
-            </div>
+                <input class="submitbtn" type="submit" value="Save Recipe">
+
            </div>
-            <input type="submit">
         </form>
         
     </div>
