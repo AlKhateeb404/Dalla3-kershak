@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Add new recipe</title>
 </head> 
+
+
 <body style="background-color: #fdf6ee;">
   <nav style="background-color: #271c00; padding: 10px;">
     <table width="100%" border="0">
@@ -28,6 +30,14 @@
 
         <form action="submit.html" method="get" class="form-card">
             
+            <div class="image">
+            <h2>Add Recipe Photo</h2>
+            <label for="inputimg">
+                <img  id="Recipeimg" src="white.jpg" alt="add image">
+            </label>
+            <label class="imageLabel" for="inputimg">Update Image</label>
+            <input type="file" accept="image/*" id="inputimg">
+            </div>
            <div class="idnamesec">
              <div class="idname">
             <h2>Recipe ID</h2>
@@ -57,26 +67,32 @@
                     </div>
                     </div>
                 </div>
-            <!-- adding ingredients with static number till we add js so it becomes unlimited -->
-             <!-- to be edited -->
+         
+            <div id="ingredients">
             <div class="ingredientSec">
 
             <h2> Ingredients</h2>
 
+            <div class="fixedingredient">
+                <!-- <h3>ingredient 1</h3 > -->
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="ID" required>
+                <input type="text" placeholder="quantity"  required>
+            </div>
+
             <div class="ingredient">
                 <!-- <h3>ingredient 1</h3 > -->
-                <input type="text" placeholder="Name" required>
-                <input type="text" placeholder="ID" required>
-                <input type="text" placeholder="quantity"  required>
+                <input type="text" placeholder="Name" >
+                <input type="text" placeholder="ID" >
+                <input type="text" placeholder="quantity" >
             </div>
-             <div class="ingredient">
-                <!-- <h3>ingredient 1</h3 > -->
-                <input type="text" placeholder="Name" required>
-                <input type="text" placeholder="ID" required>
-                <input type="text" placeholder="quantity"  required>
-            </div>
-                <input class="submitbtn" type="submit" value="Save Recipe">
 
+                <button type="button" id="add-btn">Add Ingredient</button>
+                <input class="submitbtn" type="submit" value="Save Recipe">
+            
+
+   
+           </div>
            </div>
         </form>
         
@@ -88,5 +104,7 @@
      </footer>
 
 </body>
+
+<script src="addpage.js"></script>
 
 </html>
