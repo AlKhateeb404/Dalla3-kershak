@@ -6,7 +6,7 @@
     margin :0;
     text-align: center;
     
-     background: linear-gradient( #f3e9dc, #dfc8b1 , #b98f73 , #6b261f ),
+     background: linear-gradient(#dfc8b1 , #b7957f, #b98f73 , #2b140c ),
     radial-gradient(circle at 30% 30%, rgba(255,255,255,0.45) 0%, transparent 28%),
     radial-gradient(circle at 80% 70%, rgba(108,74,57,0.25) 0%, transparent 25%);
     
@@ -27,16 +27,18 @@
     color: #565656
 }
 
+
 #Recipeimg{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+
+    width: 250px;
+    height: 250px;
+
 }
 
 .imageLabel{
-    margin : 40px;    
+    margin : 30px;    
     padding: 15px; 
-    border: 2px solid #914A40 ;
+    border: 2px solid #2b140c ;
     background-color: #f3e9dc;
     border-radius: 15px;
     font-size: 20px;
@@ -52,7 +54,7 @@ h1{
      font-family:"Egyptian 505", "Egyptian505", "Clarendon", serif; 
     font-size: 75px;
     font-weight: 300 ;
-    color: #914A40;
+    color: #2b140c;
     width: 100%;
     max-width: 800px;
     align-self: center; 
@@ -152,16 +154,16 @@ h1{
     font-family: sans-serif;
     font-weight: 100;
     font-size: 15px;
-    color:#914A40;
+    color:#2b140c;
     background-color: #f5f1ea ;
-    border: #914A40 2px solid;
+    border: #2b140c 2px solid;
     cursor: pointer;
     transition: background 0.1s;
     /* box-sizing: border-box; */
 }
 
 .radio-input:checked + .radio-label{
-    background-color: #914A40;
+    background-color: #2b140c;
     color: #f5f1ea ;
 }
 
@@ -231,7 +233,7 @@ h1{
     width: 20%; 
     max-width: 200px;
     border-radius: 15px;
-    background-color:#914A40;
+    background-color:#2b140c;
     border: none ;
     color: #f5f1ea;
     font-family: sans-serif;
@@ -241,7 +243,7 @@ h1{
 
 #add-btn:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-    background-color: #A05C50;
+    background-color: #2b140c;
 }
 
 .submitbtn{
@@ -252,7 +254,7 @@ h1{
     width: 30%; 
     max-width: 200px;
     border-radius: 15px;
-    background-color:#914A40;
+    background-color:#2b140c;
     border: none ;
     color: #f5f1ea;
     font-family: sans-serif;
@@ -262,8 +264,10 @@ h1{
 
 .submitbtn:hover{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-    background-color: #A05C50;
+    background-color: #2b140c;
 }
+
+/* navbar */
 
  .navbar {
         background: #f5ede3;
