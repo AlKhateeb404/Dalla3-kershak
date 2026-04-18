@@ -89,37 +89,7 @@
 
   </main>
 
-  <script>
-    let selectedRole = 'user';
-
-    function pickRole(role) {
-      selectedRole = role;
-      document.getElementById('roleUser').classList.toggle('active', role === 'user');
-      document.getElementById('roleAdmin').classList.toggle('active', role === 'admin');
-    }
-
-    function togglePass(id, btn) {
-      const input = document.getElementById(id);
-      const isText = input.type === 'text';
-      input.type = isText ? 'password' : 'text';
-      btn.style.color = isText ? '#b8a080' : '#b8860b';
-    }
-
-    function showToast(msg) {
-      const t = document.getElementById('toast');
-      t.textContent = msg;
-      t.classList.add('show');
-      setTimeout(() => t.classList.remove('show'), 3000);
-    }
-
-    function handleLogin(e) {
-      e.preventDefault();
-      const email = document.getElementById('loginEmail').value.trim();
-      const pass = document.getElementById('loginPass').value;
-      if (!email || !pass) { showToast('Please fill in all fields.'); return; }
-      showToast('Marhaba! Signing you in...');
-    }
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
